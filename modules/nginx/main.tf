@@ -1,6 +1,6 @@
 
 provider "kubernetes" {
-  config_path    = "/Users/wajahatlateef/.kube/config"
+  config_path    = "/home/wajahatlatef/.kube/config"
  # config_context = "my-context"
 }
 
