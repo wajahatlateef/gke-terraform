@@ -10,11 +10,20 @@ pipeline{
                 }
             }
         }
+        stage('viewing  terraform plan'){
+            steps{
+                script{
+                    sh'''
+                        terraform plan  
+                    '''
+                }
+            }
+        }
         stage('Applying terraform'){
             steps{
                 script{
                     sh'''
-                        terraform apply -yes
+                        terraform apply  -auto-approve
                     '''
                 }
             }
